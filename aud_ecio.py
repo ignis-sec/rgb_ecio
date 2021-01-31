@@ -6,7 +6,7 @@ from .audio_loopback.audio_visualizer import AudioVisualizer1D
 import allogate as logging
 
 class ECIOAudioVisualizer(AudioVisualizer1D):
-    def __init__(self, chroma_app, audio_controller=None, fade=0.8, delay=0.05, dampen=100, ceiling=2700, ambient_brightness_coef=0.1):
+    def __init__(self, chroma_app, audio_controller=None, fade=0.8, delay=0.0, dampen=0, ceiling=180, ambient_brightness_coef=0.1):
          super().__init__(chroma_app, audio_controller, fade, delay, dampen, ceiling, ambient_brightness_coef)
 
     def visualizeOnce(self, falloff=0.8, rows=5, col=50):
